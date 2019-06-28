@@ -1,4 +1,4 @@
-![Pinpoint](.github/pinpoint.png)
+![Pinpoint](.github/logo.svg)
 
 # Coding Tests
 
