@@ -1,52 +1,76 @@
-/*************
-	Colors
-*************/
+//
+//	Colors
+//
 
-@blue			: #0099CC;
-@blueDark		: #27465B;
-@orange			: #FF9900;
-@greyLight		: #EEE;
-@greyMedium		: #99A4AC;
-@greyDark		: #515151;
+@blue			: #008DFF;
+@blueDark		: #000046;
+@orange			: #FF8124;
+@greyLight		: #F3F4F6;
+@greyMedium		: #8F93A9;
+@greyDark		: #363950;
 @grey			: @greyMedium;
-@red			: #CC0033;
-@green			: #00CC99;
-@yellow			: #FFD23C;
+@red			: #B30000;
+@green			: #00B300;
+@yellow			: #FFDA19;
+@white			: #FFF;
+@black			: #000;
 
 @primary		: @blue;
 @secondary		: @orange;
 @text			: @greyDark;
 @subtext		: @greyMedium;
-@link			: @blue;
-@linkHover		: lighten(@link, 5%);
 @negative		: @red;
 @positive		: @green;
-@background		: #F7F9FA;
+@background		: @greyLight;
 @zebra			: @background;
+@textColor		: @greyDark;
+@lightTextColor	: @greyMedium;
+@linkColor		: @blue;
+@linkHoverColor	: lighten(@linkColor, 5%);
 
-/********************
-	Font Families
-********************/
+//
+//	Font Families
+//
 
-@font	: 'Roboto', 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@fontName			: 'Roboto';
+@headerFont			: @fontName, 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@pageFont			: @fontName, 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@importGoogleFonts	: true;
+@googleProtocol		: 'https://';
+@fontSmoothing		: antialiased;
+@googleFontRequest	: 'Roboto:300,400,400i,500,700,700i|Noto+Serif+SC:400,900';
 
-/***************************
-	Font Sizes & Weights
-***************************/
+//
+//	Font Sizes & Weights
+//
 
-@fontSize	: 1rem;		// 14px
-@p			: 1rem;		// 14px
-@h1			: 2.2rem;	// 22px
-@h2			: 2.0rem;	// 20px
-@h3			: 1.8rem;	// 18px
-@h4			: 1.6rem;	// 16px
-@h5			: 1.4rem;	// 14px
+@emSize		: 13px;
+@fontSize	: 13px;
+@h1			: 21px;
+@h2			: 19px;
+@h3			: 17px;
+@h4			: 15px;
+@h5			: 13px;
 
 @bold		: 700;
 @normal		: 400;
 
-/*****************
-	UI Styling
-*****************/
+//
+//	UI Styling
+//
 
-@shadow		: 0px 5px 15px 5px rgba(0, 0, 0, 0.02);
+// Paragraphs
+@paragraphLineHeight	: 17px;
+@paragraphMargin		: 0 0 20px;
+
+// Borders
+@defaultBorderRadius	: 0;
+@relativeBorderRadius	: 0;
+@absoluteBorderRadius	: 0;
+@borderColor			: rgba(0, 0, 0, 0);
+
+// Shadows
+@shadow				: 0px 5px 15px 5px rgba(0, 0, 0, 0.02);
+@subtleShadow		: @shadow;
+@floatingShadow		: @shadow;
+@darkShadow			: 0px 5px 15px 5px rgba(0, 0, 0, 0.05);
